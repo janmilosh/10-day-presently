@@ -219,7 +219,8 @@ angular.module('myApp', ['ngRoute', 'ngSanitize'])
 	  };
     $scope.choose = function(index) {
 			$scope.user.location = $scope.results[index].name;
-		}	
+			$scope.save();
+		}
 })
 
 .controller('HourlyCtrl',
